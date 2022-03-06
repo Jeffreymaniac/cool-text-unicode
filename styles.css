@@ -5,6 +5,7 @@ font-family: 'Be Vietnam Pro', sans-serif;
 }
 body {
  margin:0px; 
+ background-color:#a1616c;
 }
 #topnav {
 padding: 13px 16px;  
@@ -16,6 +17,5 @@ padding: 13px 16px;
 }
 #maincontent { 
  margin:12px; 
-  background-color:#a1616c;
   color:#f2cd95;
 }
