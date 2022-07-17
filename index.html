@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
     <title>CoolDudeBrowser homepage</title>
     <link rel="stylesheet" href="https://cooldudetech.github.io/browser-homepage/styles.css" />
   <meta name="theme-color content="#6d3444" />
-<link rel="icon" type="image/png" href="https://ssl.gstatic.com/docs/common/profile/nyancat_lg.png">
+<link rel="icon" type="image/png" href="https://ssl.gstatic.com/docs/common/profile/nyancat_lg.png" />
+
   </head>
   <body>
     <nav id="topnav">
@@ -17,10 +19,17 @@
     <div id="maincontent">
       <h1>CoolDudeBrowser</h1>
       <p>This is a browser for cool dudes.</p>
-      <input type="text" placeholder="Search.." name="search">
+      
+  <label for="coolsearch">Search CoolDudeBrowser: </label>
+  <input type="text" id="coolsearch" name="coolsearch" placeholder="Search...">
+  <input type="button" value="Submit" onclick="submitSearch(document.getElementById('coolsearch').innerHTML)">
+      <p>To submit, press submit.</p>
+                                                                                                             
     </div>
   <script>
-  
+  function submitSearch(searchtext) {
+
+}
   </script>
   </body>
   </html>
