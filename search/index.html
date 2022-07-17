@@ -21,12 +21,13 @@
       
   <label for="coolsearch">Search CoolDudeBrowser: </label>
   <input type="text" id="coolsearch" name="coolsearch" placeholder="Search...">
-  <input type="button" value="Submit" onclick="submitSearch(document.getElementById('coolsearch').textContent)">
+  <input type="button" value="Submit" onclick="submitSearch()">
 <h2>Your search: <span id="yoursearch"></span>.</h2>
 </div>
   <script>
-  function submitSearch(searchtext) {
-location.href = "https://cooldudetech.github.io/browser-homepage/search?q=" + searchtext;
+   function submitSearch() {
+location.href = "https://cooldudetech.github.io/browser-homepage/search?q=" + document.getElementById('coolsearch').textContent;
+
 }
 
   </script>
